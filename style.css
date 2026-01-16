@@ -1,0 +1,74 @@
+/* ===================================
+   Novel Homes - Eco-Modern Design System
+   Design Theme: Scandi-Clean, Apple Store vibe, Clinical
+   =================================== */
+
+/* Google Fonts - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+/* ===================================
+   CSS Variables - Color Palette
+   =================================== */
+:root {
+  /* Background Colors */
+  --bg-white: #ffffff;
+  --bg-grey: #f7f9fa;
+
+  /* Text Colors */
+  --text-dark: #1d1d1f;
+  --text-grey: #86868b;
+
+  /* Accent Colors */
+  --accent-mint: #00d289;
+
+  /* Borders */
+  --border-light: #e5e5e5;
+
+  /* Typography */
+  --font-primary: "Inter", sans-serif;
+}
+
+/* ===================================
+   Global Resets
+   =================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: var(--font-primary);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
