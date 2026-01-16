@@ -1,3 +1,19 @@
+/*
+Theme Name: Novel Homes
+Theme URI: https://novelhomes.ng
+Author: Novel
+Author URI: https://novelhomes.ng
+Description: An eco-modern WordPress theme for Novel Homes electronics brand. Features Scandi-clean design with Apple Store aesthetics, built for energy-efficient appliances and WooCommerce integration.
+Version: 1.0.0
+Requires at least: 5.8
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: novel-homes
+Tags: e-commerce, clean, minimal, woocommerce, eco-friendly, modern, business
+*/
+
 /* ===================================
     Eco-Modern Design System
    Design Theme: Scandi-Clean, Apple Store vibe, Clinical
@@ -113,6 +129,20 @@ p {
 }
 
 /* ===================================
+   Animations
+   =================================== */
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================================
    Header & Navigation
    =================================== */
 .header {
@@ -121,6 +151,11 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.header-scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbar {
